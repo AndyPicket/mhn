@@ -51,7 +51,7 @@ ldconfig
 
 cd /tmp
 rm -rf hpfeeds
-git clone https://github.com/pwnlandia/hpfeeds.git
+git clone https://github.com/AndyPicket/hpfeeds.git
 cd hpfeeds/appsupport/libhpfeeds
 autoreconf --install
 ./configure && make && make install 
