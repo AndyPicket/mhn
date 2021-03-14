@@ -42,12 +42,14 @@ if [ -f /etc/redhat-release ]; then
      ./install_supervisord.sh
 fi
 
+
 if [ -f /etc/debian_version ]; then
     apt-get update && apt-get upgrade -y
     apt-get install -y python-pip
     pip install --upgrade pip
     apt-get install apt-transport-https -y
     apt-get install build-essential -y #needed for building some python modules
+    ./install_supervisord.sh
 fi
 echo "[`date`] Geting configuration"
 
