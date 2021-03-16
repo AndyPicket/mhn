@@ -12,7 +12,7 @@ do
     read MONGO
     if [ "$MONGO" == "y" -o "$MONGO" == "Y" ]
     then
-        REMOTE_MONGO=true
+        REMOTE_MONGO='true'
         echo -n "MongoDB Host: "
         read MONGO_HOST
         echo -n "MongoDB Port: "
@@ -21,7 +21,7 @@ do
         break
     elif [ "$MONGO" == "n" -o "$MONGO" == "N" ]
     then
-        REMOTE_MONGO=false
+        REMOTE_MONGO='false'
         MONGO_HOST='localhost'
         MONGO_PORT=27017
         echo "Using default configuration:"
